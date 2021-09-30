@@ -73,8 +73,8 @@ $colorDos: rgb(161, 161, 0);
         text-align: center;
     }
     #usadosVideo{
-        width: 100%;
         height: 50%;
+        width: 100%;
     }
     #usadosTitulo{
         font-size: 20px;
@@ -96,6 +96,11 @@ $colorDos: rgb(161, 161, 0);
     }   
     p{
         font-size: 15px;
+        text-align: center;
+        font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+    h5{
+        font-size: 25px;
         text-align: center;
         font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     }
@@ -151,9 +156,15 @@ $colorDos: rgb(161, 161, 0);
 
 
 @media only screen and (min-width:600px){
+    /*Index*/
     #indexMain{
+        .card{
+            width: 50%;
+           position: relative;
+           left: 25%;
+        }
         p{
-            font-size: 45px;
+            font-size: 25px;
         }
     }
     .autonorteTexto{
@@ -164,6 +175,7 @@ $colorDos: rgb(161, 161, 0);
             font-size: 20px;
         }
     }
+    /*Usados*/
     #usadosMain{
         #usadosTitulo{
             font-size: 40px;
@@ -171,10 +183,28 @@ $colorDos: rgb(161, 161, 0);
         #usadosTexto{
             font-size: 20px;
     }
+       #usadosVideo{
+           width: 70%;
+           position: relative;
+           left: 15%;
+       }
+        .carousel-inner{
+            width: 70%;
+            height: 80%;
+            position: relative;
+            left: 15%;
+        }
+        .card-img-top{
+            width: 50%;
+            height: 80%;
+            position: relative;
+            left: 25%;
+        }
         .card-text{
             font-size: 45px;
         }
 }
+    /*0km*/
     #ceroKmMain{
         #ceroKmTitulo{
             font-size: 30px;
@@ -182,10 +212,27 @@ $colorDos: rgb(161, 161, 0);
         #ceroKmTexto{
             font-size: 15px;
         }
+        #ceroKmVideo{
+            width: 70%;
+            position: relative;
+            left: 15%;
+        }
+        .contenedorCartasCero{
+           display: flex;
+           justify-content: center;
+        }
     }
     .form-group{
         display: flex;
         justify-content: center;
+    }
+    /*Nosotros*/
+    #nosotrosMain{
+        .carousel-inner{
+            width: 50%;
+            position: relative;
+            left: 25%;
+        }
     }
 }
 

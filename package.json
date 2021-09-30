@@ -14,5 +14,13 @@
     "nodemon": "^2.0.13"
   },
   "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Juan81296/ProyectoFinalTenaglia.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Juan81296/ProyectoFinalTenaglia/issues"
+  },
+  "homepage": "https://github.com/Juan81296/ProyectoFinalTenaglia#readme",
   "description": ""
 }
