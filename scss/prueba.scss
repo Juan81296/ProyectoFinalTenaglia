@@ -6,6 +6,18 @@
 $colorUno: rgb(0, 0, 0);
 $colorDos: rgb(161, 161, 0);
 
+@mixin btn ($ancho, $alto, $colorBg, $color) {
+    width: $ancho;
+    height: $alto;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 20px 20px 20px 20px;
+    font-size: 15px;
+    font-family: 'Cabin', sans-serif;
+    background-color: $colorBg;
+    color: $color;
+}
+
 /*Inicio*/
 .img-fluid{
     width: 100%;
@@ -41,7 +53,7 @@ $colorDos: rgb(161, 161, 0);
     }
 }
 .autonorteTexto{
-    h2{ font-size: 20px;
+    .titulo{ font-size: 20px;
         text-align: center;
         font-family:Arial, Helvetica, sans-serif;
         text-transform: uppercase;
@@ -52,53 +64,34 @@ $colorDos: rgb(161, 161, 0);
 
     h3{
         font-family:Arial, Helvetica, sans-serif;
-    text-align: center;
-    font-size: 15px;
-    text-transform: uppercase;
-    font-weight: bolder;
-    color: $colorUno;
-    text-shadow: 1px 1px $colorDos;
+        text-align: center;
+        font-size: 15px;
+        text-transform: uppercase;
+        font-weight: bolder;
+        color: $colorUno;
+        text-shadow: 1px 1px $colorDos;
     }
 }
 /*usados*/
 
 #usadosMain{
-    #usados{
+    .usadosTitulo{
         font-size: 20px;
+        text-align: center;
         font-family:Arial, Helvetica, sans-serif;
         text-transform: uppercase;
         font-weight: bolder;
-        color: $colorUno;
+        color: $colorDos;
         text-shadow: 1px 1px gray;
-        text-align: center;
+    }
+    .btnUsados{
+        @include btn(100%, 100px, black, rgb(165, 165, 14) );
+        font-weight: bolder;
     }
     #usadosVideo{
         height: 50%;
         width: 100%;
-    }
-    #usadosTitulo{
-        font-size: 20px;
-        text-align: center;
-        font-family:Arial, Helvetica, sans-serif;
-        text-transform: uppercase;
-        font-weight: bolder;
-        color: $colorUno;
-        text-shadow: 1px 1px gray;
-    }
-    #usadosTexto{
-        font-family:Arial, Helvetica, sans-serif;
-        font-size: 10px;
-        text-align: center;
-        text-transform: uppercase;
-        font-weight: bolder;
-        color: $colorDos;
-        text-shadow: 1px 1px $colorDos;
     }   
-    p{
-        font-size: 15px;
-        text-align: center;
-        font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    }
     h5{
         font-size: 25px;
         text-align: center;
@@ -138,6 +131,12 @@ $colorDos: rgb(161, 161, 0);
             color: $colorUno;
             text-shadow: 1px 1px $colorDos;
         }
+        .btnCero{
+            @include btn(100%, 100px, black, rgb(165, 165, 14) );
+        }
+        .btnCeroDos{
+            @include btn(100%, 200px, rgb(165, 165, 14), black);
+        }
     }
 /*Nosotros*/
 #nosotrosMain{
@@ -147,8 +146,16 @@ $colorDos: rgb(161, 161, 0);
         font-family:Arial, Helvetica, sans-serif;
         text-transform: uppercase;
         font-weight: bolder;
-        color: $colorUno;
-        text-shadow: 1px 1px $colorDos;
+        color: $colorDos;
+        text-shadow: 1px 1px gray;
+    }
+    .btnUno{
+       @include btn( 100%, 100px, rgb(100, 99, 99), rgb(165, 165, 14));
+       font-size: bolder;
+    }
+    .btnDos{
+        @include btn(100%, 100px,rgb(165, 165, 14), rgb(110, 109, 109) )
+        font-weight: bolder;
     }
 }
 
@@ -168,7 +175,7 @@ $colorDos: rgb(161, 161, 0);
         }
     }
     .autonorteTexto{
-        h2{
+        .titulo{
             font-size: 40px;
         }
         h3{
@@ -177,7 +184,7 @@ $colorDos: rgb(161, 161, 0);
     }
     /*Usados*/
     #usadosMain{
-        #usadosTitulo{
+        .usadosTitulo{
             font-size: 40px;
         }
         #usadosTexto{
@@ -185,6 +192,7 @@ $colorDos: rgb(161, 161, 0);
     }
        #usadosVideo{
            width: 70%;
+           height: 600px;
            position: relative;
            left: 15%;
        }
@@ -203,6 +211,14 @@ $colorDos: rgb(161, 161, 0);
         .card-text{
             font-size: 45px;
         }
+        h5{
+            text-shadow: 1px 1px white;
+        }
+        p{
+            font-weight: bolder;
+            font-size: 20px;
+            text-shadow: 1px 1px white;
+        }
 }
     /*0km*/
     #ceroKmMain{
@@ -215,24 +231,49 @@ $colorDos: rgb(161, 161, 0);
         #ceroKmVideo{
             width: 70%;
             position: relative;
+            height: 600px;
             left: 15%;
         }
         .contenedorCartasCero{
            display: flex;
            justify-content: center;
         }
+        .btnCero{
+            font-size: 25px;
+        }
+        .btnCeroDos{
+            font-size: 25px;
+        }
     }
-    .form-group{
-        display: flex;
-        justify-content: center;
-    }
+  
     /*Nosotros*/
     #nosotrosMain{
+         #entregas{
+             font-size: 40px;
+         }
         .carousel-inner{
             width: 50%;
             position: relative;
             left: 25%;
         }
+        .btnUno{
+            font-size: 25px;
+        }
+        .btnDos{
+            font-size: 25px;
+        }
+    }
+    /*contacto*/
+    .form-group{
+        display: flex;
+        justify-content: center;
+    }
+    .form-group{
+        button{
+            position: relative;
+            left: 34%;
+        }
     }
 }
+
 

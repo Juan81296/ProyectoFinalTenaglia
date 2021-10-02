@@ -31,7 +31,7 @@
     color: black;
     text-shadow: 1px 1px #a1a100; }
 
-.autonorteTexto h2 {
+.autonorteTexto .titulo {
   font-size: 20px;
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
@@ -50,41 +50,30 @@
   text-shadow: 1px 1px #a1a100; }
 
 /*usados*/
-#usadosMain #usados {
+#usadosMain .usadosTitulo {
   font-size: 20px;
+  text-align: center;
   font-family: Arial, Helvetica, sans-serif;
   text-transform: uppercase;
   font-weight: bolder;
-  color: black;
-  text-shadow: 1px 1px gray;
-  text-align: center; }
+  color: #a1a100;
+  text-shadow: 1px 1px gray; }
+
+#usadosMain .btnUsados {
+  width: 100%;
+  height: 100px;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 20px 20px 20px 20px;
+  font-size: 15px;
+  font-family: 'Cabin', sans-serif;
+  background-color: black;
+  color: #a5a50e;
+  font-weight: bolder; }
 
 #usadosMain #usadosVideo {
   height: 50%;
   width: 100%; }
-
-#usadosMain #usadosTitulo {
-  font-size: 20px;
-  text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
-  text-transform: uppercase;
-  font-weight: bolder;
-  color: black;
-  text-shadow: 1px 1px gray; }
-
-#usadosMain #usadosTexto {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 10px;
-  text-align: center;
-  text-transform: uppercase;
-  font-weight: bolder;
-  color: #a1a100;
-  text-shadow: 1px 1px #a1a100; }
-
-#usadosMain p {
-  font-size: 15px;
-  text-align: center;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; }
 
 #usadosMain h5 {
   font-size: 25px;
@@ -123,6 +112,28 @@
   color: black;
   text-shadow: 1px 1px #a1a100; }
 
+#ceroKmMain .btnCero {
+  width: 100%;
+  height: 100px;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 20px 20px 20px 20px;
+  font-size: 15px;
+  font-family: 'Cabin', sans-serif;
+  background-color: black;
+  color: #a5a50e; }
+
+#ceroKmMain .btnCeroDos {
+  width: 100%;
+  height: 200px;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 20px 20px 20px 20px;
+  font-size: 15px;
+  font-family: 'Cabin', sans-serif;
+  background-color: #a5a50e;
+  color: black; }
+
 /*Nosotros*/
 #nosotrosMain #entregas {
   font-size: 20px;
@@ -130,8 +141,32 @@
   font-family: Arial, Helvetica, sans-serif;
   text-transform: uppercase;
   font-weight: bolder;
-  color: black;
-  text-shadow: 1px 1px #a1a100; }
+  color: #a1a100;
+  text-shadow: 1px 1px gray; }
+
+#nosotrosMain .btnUno {
+  width: 100%;
+  height: 100px;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 20px 20px 20px 20px;
+  font-size: 15px;
+  font-family: 'Cabin', sans-serif;
+  background-color: #646363;
+  color: #a5a50e;
+  font-size: bolder; }
+
+#nosotrosMain .btnDos {
+  width: 100%;
+  height: 100px;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 20px 20px 20px 20px;
+  font-size: 15px;
+  font-family: 'Cabin', sans-serif;
+  background-color: #a5a50e;
+  color: #6e6d6d;
+  font-weight: bolder; }
 
 @media only screen and (min-width: 600px) {
   /*Index*/
@@ -141,17 +176,18 @@
     left: 25%; }
   #indexMain p {
     font-size: 25px; }
-  .autonorteTexto h2 {
+  .autonorteTexto .titulo {
     font-size: 40px; }
   .autonorteTexto h3 {
     font-size: 20px; }
   /*Usados*/
-  #usadosMain #usadosTitulo {
+  #usadosMain .usadosTitulo {
     font-size: 40px; }
   #usadosMain #usadosTexto {
     font-size: 20px; }
   #usadosMain #usadosVideo {
     width: 70%;
+    height: 600px;
     position: relative;
     left: 15%; }
   #usadosMain .carousel-inner {
@@ -166,6 +202,12 @@
     left: 25%; }
   #usadosMain .card-text {
     font-size: 45px; }
+  #usadosMain h5 {
+    text-shadow: 1px 1px white; }
+  #usadosMain p {
+    font-weight: bolder;
+    font-size: 20px;
+    text-shadow: 1px 1px white; }
   /*0km*/
   #ceroKmMain #ceroKmTitulo {
     font-size: 30px; }
@@ -174,15 +216,30 @@
   #ceroKmMain #ceroKmVideo {
     width: 70%;
     position: relative;
+    height: 600px;
     left: 15%; }
   #ceroKmMain .contenedorCartasCero {
     display: flex;
     justify-content: center; }
-  .form-group {
-    display: flex;
-    justify-content: center; }
+  #ceroKmMain .btnCero {
+    font-size: 25px; }
+  #ceroKmMain .btnCeroDos {
+    font-size: 25px; }
   /*Nosotros*/
+  #nosotrosMain #entregas {
+    font-size: 40px; }
   #nosotrosMain .carousel-inner {
     width: 50%;
     position: relative;
-    left: 25%; } }
+    left: 25%; }
+  #nosotrosMain .btnUno {
+    font-size: 25px; }
+  #nosotrosMain .btnDos {
+    font-size: 25px; }
+  /*contacto*/
+  .form-group {
+    display: flex;
+    justify-content: center; }
+  .form-group button {
+    position: relative;
+    left: 34%; } }
