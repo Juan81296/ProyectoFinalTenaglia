@@ -178,6 +178,11 @@
 
 @media only screen and (min-width: 600px) {
   /*Index*/
+  #indexMain .img-fluid {
+    width: 70%;
+    height: 600px;
+    position: relative;
+    left: 15%; }
   #indexMain .card {
     width: 50%;
     position: relative;
