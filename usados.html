@@ -17,7 +17,7 @@
           <div class="fixed-top">
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
               <div class="container-fluid">
-                <a class="navbar-brand" href="index.html">Autonorte</a>
+                <a class="navbar-brand" href="index.html" id="logo">Autonorte</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
                 </button>
@@ -27,16 +27,16 @@
                       <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="usados.html">Usados</a>
+                      <a class="nav-link" href="usados.html"id="nav-a">Usados</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="0km.html">0km</a>
+                      <a class="nav-link" href="0km.html"id="nav-a">0km</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="nosotros.html">Nosotros</a>
+                      <a class="nav-link" href="nosotros.html"id="nav-a">Nosotros</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="contacto.html">Contacto</a>
+                      <a class="nav-link" href="contacto.html"id="nav-a">Contacto</a>
                     </li>
                   </ul>
                 </div>
@@ -93,8 +93,45 @@
                 <span class="visually-hidden">Next</span>
               </button>
             </div>
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    ¿Cuáles son las formas de pago?
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                   Efectivo y financiación hasta en 48 cuotas con credito prendarios.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    ¿Toman usados como parte de pago?
+                  </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Si! Traenos tu usado y te financiamos el resto de tu nueva adquisición!
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    ¿Que necesito para adquirir un vehiculo?
+                  </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Veni solo con tu DNI y hacemos entrega inmediata!
+                  </div>
+                </div>
+              </div>
+            </div>
                 <button class="btnUsados">ingresos todas las semanas, todas las marcas.</button>
-        
             </div>
           </div>
         </main>
